@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TappAV | Premium Home Cinema &amp; Audio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d4af35",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#0a0a0a",
+                        "charcoal": "#1a1a1a",
+                        "accent-dark": "#262626",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 53, 0.1);
+        }
+        .hover-gold:hover {
+            border-color: #d4af35;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-background-dark">
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 bg-background-dark/80 backdrop-blur-md border-b border-white/5">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-12">
+<a class="flex items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-primary text-3xl transition-transform group-hover:scale-110">theater_comedy</span>
+<span class="text-2xl font-black tracking-tighter uppercase italic">TappAV</span>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors uppercase tracking-widest" href="#">Home</a>
+<a class="text-sm font-semibold text-slate-400 hover:text-primary transition-colors uppercase tracking-widest" href="#">Shop</a>
+<a class="text-sm font-semibold text-slate-400 hover:text-primary transition-colors uppercase tracking-widest" href="#">Projects</a>
+<a class="text-sm font-semibold text-slate-400 hover:text-primary transition-colors uppercase tracking-widest" href="#">About</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-charcoal rounded-full px-4 py-2 border border-white/10 focus-within:border-primary transition-all">
+<span class="material-symbols-outlined text-slate-400 text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm placeholder:text-slate-500 w-48" placeholder="Search systems..." type="text"/>
+</div>
+<button class="relative p-2 text-slate-100 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute top-0 right-0 size-4 bg-primary text-background-dark text-[10px] font-bold rounded-full flex items-center justify-center">0</span>
+</button>
+<button class="md:hidden text-slate-100">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-background-dark/60 via-background-dark/40 to-background-dark z-10"></div>
+<img alt="Luxury Home Cinema" class="w-full h-full object-cover" data-alt="Modern luxury home theater with large screen and speakers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEaRiTAofK9agTfWKPp9qFe5RZBHzhMfwmKVPCrLBilKhC6e1Mtj6UByy8QZ_QyPsgOknPITO0GNczYHrP15vrKCMkKx0vkUgmK3d-LKzeeissWByDoRpMiEFe5gV-qJSoiIkGWnOihc2hrNuxrS1ChsbBWdSDM7R5GKVn6gMOGMNHez-1lsQkAR8EW6qIsmIg5sf2KxFdgIA0cWHpaiiSueeV0zx_2OCh9Hfi_Eezn3Ke4H5Ssz3aoYMZq5k7en4CC_C2jvyUwPLj"/>
+</div>
+<div class="relative z-20 text-center px-6 max-w-4xl">
+<span class="text-primary font-bold tracking-[0.3em] uppercase mb-4 block text-sm">Elevate Your Lifestyle</span>
+<h1 class="text-5xl md:text-8xl font-black text-white leading-tight mb-6 tracking-tighter">
+                Elevate Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary">Senses</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Experience true cinematic excellence at home. Bespoke audio-visual solutions engineered for the most discerning enthusiasts.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto px-10 py-4 bg-primary text-background-dark font-bold rounded-lg hover:bg-white transition-all transform hover:-translate-y-1 shadow-lg shadow-primary/20">
+                    Shop Now
+                </button>
+<button class="w-full sm:w-auto px-10 py-4 border border-white/20 text-white font-bold rounded-lg hover:bg-white hover:text-background-dark transition-all transform hover:-translate-y-1 backdrop-blur-sm">
+                    Our Projects
+                </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce z-20">
+<span class="material-symbols-outlined text-white/30 text-3xl font-light">expand_more</span>
+</div>
+</section>
+<!-- Product Categories -->
+<section class="py-24 bg-background-dark relative">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter mb-2">The Collection</h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+<a class="text-primary font-bold text-sm uppercase tracking-widest border-b border-primary/30 hover:border-primary transition-all pb-1" href="#">Browse All</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Projectors -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end 4K cinema projector" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp0fBo3dSc0yd6fXbYX57hSzNDV9wj-3Dc7YY3ZZAB6aj55C4KIz6WpnW_zfS0YphMg5i8aIgN_diGK53AYLCWcoBaVtYSVzg7wYRnypW8HZ980A43AHLZyZmeLXgqvdpax83psv-19OQX0pq82RXdMWf0DH47DuwF2tJJMRQVamSeaQ9Kfx6EknHrUf5cAqDeNTFiFvFYft7xD-jWMWgOreygt1Xnsffpn0bfyB9bMGnwYJ_25aN6WcMsR9wkufg8134b-jZDVmHp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="text-xl font-bold text-white mb-1">Projectors</h3>
+<p class="text-primary text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Explore 4K &amp; 8K</p>
+</div>
+</div>
+<!-- Speakers -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Premium floor standing speakers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7cVN-Hgeq9TyoPB8IS1LlckYRWKc9giS5EmQ1PWiwpVoSAcoLTu5qonvmcNXopdjwOGFEvcrxODIELAT1M9OnaLgNQao8SUbps2cEr3tqP7lt9vw1fqoywROSsGs6WydTKpN6L95dNjtEwnPvjJB6fshi0e3ZVa7_txZ4nbx0s9vnbKN9w1ukaH5XL_AbOea6puKlJH66Nyetsyfdr6PLMi6prLjFRzVkW4oHamdqjf84ukM6TmXcIWPkm1BGxeJSOM91jU_pFAmx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="text-xl font-bold text-white mb-1">Speakers</h3>
+<p class="text-primary text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Hi-Fi Audio</p>
+</div>
+</div>
+<!-- AV Receivers -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Professional AV receiver front panel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbPvGZjqzKut2sLNtfSthX3_EcMa9pm9AJvJgaS83D8oFhh5-9cWdsXwZzWZ_Cz4vNjiNGJT627zA2BC2eYKZlT0abtceuaaWGfJPTTCN8uw9ci9EnT3pdWF0MEzSsQUhJxxazsM1aBq39k7AjwcoaPV8kQxweTwDG5ivl8hAhprhhgYSQBwexY3IHRUPj82NWiQ0HNVlXzBvXSTMy0d-JkxUNyEOsLQPAQXodWMkla2o9bgtv4PHmWpX4jIx64cHb2V2yhfXVfSlr"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="text-xl font-bold text-white mb-1">AV Receivers</h3>
+<p class="text-primary text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Control Hubs</p>
+</div>
+</div>
+<!-- Home Theatre Systems -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Full home theater set up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV6k46kwoi3nxfsHSdXHCDYc13RZPZF4NAffRVrLZaKDs2cQ8b8kCwnNAcZNDQxxJdZSQOSJC675sf-A_Z6Q-0yucCqjj5YVSr2mDgnGE46kaXpdJcnbt-82-0AXxk0A1epHBVXk1SwtVss_vFyL2HejfSLQMsF0PerWNAQjBDAmRiiGw7Cbz_vF5BYaqZpIlvclsjvxTUT1NCvvoib8_1Z_55NaQLrSFQarEwdwO0HwMDEkCBorDK9ZFUZm35mLrxGblLGp8EdfLg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="text-xl font-bold text-white mb-1">Full Systems</h3>
+<p class="text-primary text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Turnkey Solutions</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-20 bg-charcoal border-y border-white/5">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="flex flex-col items-center text-center">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 border border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">construction</span>
+</div>
+<h4 class="text-lg font-bold mb-2">Expert Installation</h4>
+<p class="text-sm text-slate-400 leading-relaxed font-light">Professional white-glove setup and acoustic calibration.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 border border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">workspace_premium</span>
+</div>
+<h4 class="text-lg font-bold mb-2">Premium Brands</h4>
+<p class="text-sm text-slate-400 leading-relaxed font-light">Authorized dealer for the world's most elite AV manufacturers.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 border border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">support_agent</span>
+</div>
+<h4 class="text-lg font-bold mb-2">Lifetime Support</h4>
+<p class="text-sm text-slate-400 leading-relaxed font-light">Dedicated assistance to ensure your system always performs.</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 border border-primary/20">
+<span class="material-symbols-outlined text-primary text-3xl">architecture</span>
+</div>
+<h4 class="text-lg font-bold mb-2">Custom Design</h4>
+<p class="text-sm text-slate-400 leading-relaxed font-light">Tailored solutions that blend seamlessly with your interior.</p>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-24 bg-background-dark">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<span class="text-primary text-xs font-black tracking-widest uppercase">Elite Gear</span>
+<h2 class="text-4xl md:text-5xl font-black text-white tracking-tighter mt-2">Featured Hardware</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="glass-card rounded-xl overflow-hidden hover-gold group transition-all duration-300">
+<div class="aspect-square relative overflow-hidden bg-accent-dark">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="KEF high fidelity speakers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLooVkr8PAeB0oESraqFkhpWKx6MPoGdmCwccUMon3YLO7E5oS49JALpy8HJobpNbURKKid0kPMumiHNDz_txcd7iBU0SRkJekIdO4Wpo8miP2k2ngB7xFLQABKizIa6rp1A4jzwF0YhmFLTNX6DyPQWdP5tUf6tr15HJwoW5rvR4G3ISs6a_jbzhP24ROuFd-yKENfWE5GL3dC5-0KPDESufNJkSfd068Q4QO-W9ErSu3JBQdU13OwYF_EbazloFqyIyU32uGY-cK"/>
+<div class="absolute top-4 right-4 px-3 py-1 bg-primary text-background-dark text-[10px] font-black uppercase tracking-widest rounded-full">New</div>
+</div>
+<div class="p-8">
+<span class="text-primary text-xs font-bold uppercase tracking-widest">Acoustic Engineering</span>
+<h3 class="text-xl font-bold text-white mt-2 mb-4">KEF LS60 Wireless Speakers</h3>
+<div class="flex items-center justify-between mb-8">
+<span class="text-2xl font-black text-white">$6,999.00</span>
+<div class="flex gap-1">
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+</div>
+</div>
+<button class="w-full py-3 border border-primary/20 hover:bg-primary hover:text-background-dark text-primary font-bold transition-all rounded-lg uppercase tracking-widest text-xs">View Details</button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="glass-card rounded-xl overflow-hidden hover-gold group transition-all duration-300">
+<div class="aspect-square relative overflow-hidden bg-accent-dark">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-end Sony 4K laser projector" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnKqUokTYEwWhUI5o3O33IIHApZnlr9Q0jde9ysGSkZL3JUcUZ5IVpIjIfASlS918XE7zluepQyuMwZnQS4Hiwm_Lqze1SFAWMjshhRJ5Dc4l8LXHZtLOekjFm61KNpqP1FS9DJ-GZoeQlC20qFJOfLU6ixNCTMZkX0ebR-_PyTsOsoKAWbvVc6VB0Ez_3J_uMnomvc-a--0XcWKcg0n6g8FunxzwWOvsKoOy_tH2Xtk-tQi7EXvBi3Dhrx3-_E6BzTFGPkx15WRW7"/>
+</div>
+<div class="p-8">
+<span class="text-primary text-xs font-bold uppercase tracking-widest">Visual Excellence</span>
+<h3 class="text-xl font-bold text-white mt-2 mb-4">Sony VPL-XW7000ES 4K</h3>
+<div class="flex items-center justify-between mb-8">
+<span class="text-2xl font-black text-white">$27,999.00</span>
+<div class="flex gap-1">
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+</div>
+</div>
+<button class="w-full py-3 border border-primary/20 hover:bg-primary hover:text-background-dark text-primary font-bold transition-all rounded-lg uppercase tracking-widest text-xs">View Details</button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="glass-card rounded-xl overflow-hidden hover-gold group transition-all duration-300">
+<div class="aspect-square relative overflow-hidden bg-accent-dark">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Denon AV receiver high-tech interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtPM7G80nQJMGI9Hrz9nODI6LBgGlWAQ3Xsa8JTEk-naTA6zPh04G-riiI-7mN7SQzawf_bpO_xUFqK6UOb2ZyXfs1n3_ECdMEVOQjkbY5VWHkshjQcoimvtVeRPv4psE_GpOu67_jflfVPaagSbnlbjsuu2kNOZw7E40_mS9-6wBJwhVVokcVsLc37keK8Xu2YgCpGIFS5qedIWnT8jIsc9EV-hHjIwNuz6Hmf90wCTJSaxlwz9Lyewe5fVy_R6rs_t5TLj_m9QYS"/>
+</div>
+<div class="p-8">
+<span class="text-primary text-xs font-bold uppercase tracking-widest">The Brain</span>
+<h3 class="text-xl font-bold text-white mt-2 mb-4">Denon AVR-X8500HA 13.2ch</h3>
+<div class="flex items-center justify-between mb-8">
+<span class="text-2xl font-black text-white">$4,499.00</span>
+<div class="flex gap-1">
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+</div>
+</div>
+<button class="w-full py-3 border border-primary/20 hover:bg-primary hover:text-background-dark text-primary font-bold transition-all rounded-lg uppercase tracking-widest text-xs">View Details</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-charcoal">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<span class="material-symbols-outlined text-primary text-6xl opacity-30 mb-8">format_quote</span>
+<div class="relative overflow-hidden">
+<div class="flex transition-transform duration-500">
+<div class="w-full flex-shrink-0">
+<p class="text-2xl md:text-3xl font-light italic text-slate-200 leading-relaxed mb-8">
+                            "TappAV completely transformed our living space. The sound quality is breathtaking, and the installation was seamless. It's not just a TV room anymore, it's a private cinema."
+                        </p>
+<div class="flex flex-col items-center">
+<div class="size-16 rounded-full bg-primary/20 mb-4 p-1 border border-primary/40">
+<img class="w-full h-full rounded-full object-cover" data-alt="Customer portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiZPKIt6Cid73_5HTg9jSiHZmsQUSHDrNfIPFBY6OW8vq9S26EeJe7cKLZAFdrhUiLXQSPzAoAjAb70kQ1H56NWpuQTauDgVyRdcGwsTnQkUH-791uJJUSuo-XV-KzyJlhTqMftXcYGIZOgIeGPGvkGoAoVrkspWKxcJxr1eiqXKRk8jKeLgwdflRfzNUfEffJ96syhRPkmf2RCdg1rsLyxe9lbNf9PjowUBfA74q3j500RfiyVK8GDph6cfC5o23uDncAhfvLCorD"/>
+</div>
+<h5 class="font-black text-white uppercase tracking-widest">Julian Sterling</h5>
+<span class="text-primary text-xs font-bold mt-1">Bel Air, CA</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center gap-2 mt-12">
+<button class="size-2 rounded-full bg-primary"></button>
+<button class="size-2 rounded-full bg-white/20 hover:bg-white/40 transition-colors"></button>
+<button class="size-2 rounded-full bg-white/20 hover:bg-white/40 transition-colors"></button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-background-dark pt-24 pb-12 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+<div>
+<a class="flex items-center gap-2 mb-8" href="#">
+<span class="material-symbols-outlined text-primary text-3xl">theater_comedy</span>
+<span class="text-2xl font-black tracking-tighter uppercase italic text-white">TappAV</span>
+</a>
+<p class="text-slate-400 font-light leading-relaxed mb-8">
+                        Architects of atmosphere. We design and install the world's most immersive home entertainment environments.
+                    </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-lg bg-charcoal flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="size-10 rounded-lg bg-charcoal flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+<a class="size-10 rounded-lg bg-charcoal flex items-center justify-center hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-sm">video_camera_front</span>
+</a>
+</div>
+</div>
+<div>
+<h6 class="text-white font-black uppercase tracking-widest mb-8">Quick Links</h6>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Latest Arrivals</a></li>
+<li><a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Project Gallery</a></li>
+<li><a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Maintenance Plans</a></li>
+<li><a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Financing Options</a></li>
+<li><a class="text-slate-400 hover:text-primary transition-colors text-sm" href="#">Expert Blog</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-white font-black uppercase tracking-widest mb-8">Showroom</h6>
+<ul class="space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span class="text-slate-400 text-sm leading-relaxed">
+                                90210 Audio Way, Suite 500<br/>Beverly Hills, CA
+                            </span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-xl">phone</span>
+<span class="text-slate-400 text-sm">+1 (888) TAP-AV-NOW</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-xl">mail</span>
+<span class="text-slate-400 text-sm">concierge@tappav.com</span>
+</li>
+</ul>
+</div>
+<div>
+<h6 class="text-white font-black uppercase tracking-widest mb-8">Newsletter</h6>
+<p class="text-slate-400 text-sm mb-6">Join our list for exclusive product launches and design insights.</p>
+<form class="space-y-4">
+<div class="relative">
+<input class="w-full bg-charcoal border-white/10 rounded-lg text-sm focus:ring-primary focus:border-primary px-4 py-3" placeholder="Email Address" type="email"/>
+</div>
+<button class="w-full bg-primary text-background-dark font-bold py-3 rounded-lg hover:bg-white transition-all text-xs uppercase tracking-widest">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-500 text-xs">© 2024 TappAV Systems. All Rights Reserved.</p>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-white transition-colors text-xs" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-white transition-colors text-xs" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-white transition-colors text-xs" href="#">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
