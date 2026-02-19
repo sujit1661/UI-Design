@@ -63,8 +63,7 @@ The layout is fully responsive and optimized for:
 
 ## 🚀 Live Demo
 
-(Add live link here if available)
-
+https://sujit1661.github.io/UI-Design/
 ---
 
 ## 📌 Note
